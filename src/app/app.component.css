@@ -1,0 +1,132 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: white;
+    width: 80px;
+    height: 100vh;
+    justify-content: flex-start;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+
+.sidebar-logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 42px; */
+    /* height: 42px; */
+    background-color: lightgray;
+    margin: 12px;
+    /* margin: 12px 0 8px 0; */
+}
+
+.sidebar-logo {
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+}
+
+.mac-buttons-container {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.mac-button {
+    margin: 8px 0 0 8px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    /* border-width: 1px; */
+    /* border-style: solid; */
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.mac-close-button {
+    background-color: #ff5f57;
+    border-color: rgb(170, 0, 0);
+}
+
+.mac-close-button:hover {
+    background-color: #ff3333;
+}
+
+.mac-min-button {
+    background-color: #ffbd2e;
+    margin-left: 8px;
+    border-color: rgb(255, 115, 0);
+}
+
+.mac-min-button:hover {
+    background-color: #ffaa00;
+}
+
+.mac-max-button {
+    background-color: #28c940;
+    margin-left: 8px;
+    border-color: rgb(0, 140, 0);
+}
+
+.mac-max-button:hover {
+    background-color: #1fb933;
+}
+
+.sidebar-buttons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sidebar-button {
+    width: 42px;
+    height: 42px;
+    background-color: white;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 6px;
+    margin-top: 10px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.sidebar-button:hover {
+    background-color: #f0f0f0;
+    border-color: #bbb;
+    cursor: pointer;
+}
+
+.bottom-buttons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+.bottom-button {
+    width: 42px;
+    height: 42px;
+    background-color: lightpink;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 6px;
+    margin-top: 10px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.bottom-button:hover {
+    background-color: #f0f0f0;
+    border-color: #bbb;
+    cursor: pointer;
+}
+
+.content {
+    margin-left: 80px;
+}
