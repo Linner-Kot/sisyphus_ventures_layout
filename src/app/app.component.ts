@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'layout';
+  title = 'sisyphus_ventures_layout';
   isOpen = !false;
 
   openPopup() {
