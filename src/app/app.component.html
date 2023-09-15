@@ -10,22 +10,26 @@
   </div>
 
   <div class="sidebar-buttons-container">
-    <button class="sidebar-button"></button>
-    <button class="sidebar-button"></button>
-    <button class="sidebar-button"></button>
-    <button class="sidebar-button"></button>
-    <button class="sidebar-button"></button>
-    <button class="sidebar-button"></button>
-    <button class="sidebar-button sidebar-add-button"></button>
+    <button class="button btn-pic smth-btn-1"></button>
+    <button class="button btn-pic smth-btn-2"></button>
+    <button class="button btn-pic star-btn"></button>
+    <button class="button btn-pic zip-btn"></button>
+    <button class="button btn-pic smth-btn-3"></button>
+    <button class="button btn-pic cube-btn"></button>
+    <button class="button btn-pic plus-btn"></button>
   </div>
 
   <div class="bottom-buttons-container">
-    <button class="bottom-button"></button>
-    <button class="bottom-button"></button>
-    <button class="bottom-button"></button>
+    <button class="button bottom-button btn-pic code-btn"></button>
+    <button class="button bottom-button btn-pic settings-btn"></button>
+    <button class="button bottom-button circle btn-pic user-btn" (click)="openPopup()">
+      <div class="check-verified"></div>
+    </button>
   </div>
 </div>
 
 <div class="content">
   <router-outlet></router-outlet>
 </div>
+
+<app-user-popup *ngIf="isOpen"></app-user-popup>

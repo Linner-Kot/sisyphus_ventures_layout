@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EditeProfile } from './edite-profile.component';
+import { UserPopupComponent } from './user-popup.component';
 
-describe('EditeProfileComponent', () => {
-  let component: EditeProfile;
-  let fixture: ComponentFixture<EditeProfile>;
+describe('UserPopupComponent', () => {
+  let component: UserPopupComponent;
+  let fixture: ComponentFixture<UserPopupComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ EditeProfile ]
+      declarations: [ UserPopupComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(EditeProfile);
+    fixture = TestBed.createComponent(UserPopupComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

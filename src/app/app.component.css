@@ -4,11 +4,12 @@
     position: fixed;
     background-color: white;
     width: 80px;
-    height: 100vh;
+    height: 100%;
     justify-content: flex-start;
     align-items: center;
     top: 0;
     left: 0;
+    border-right: 2px solid var(--separators-color);
 }
 
 .sidebar-logo-container {
@@ -24,9 +25,12 @@
 }
 
 .sidebar-logo {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     background-color: gray;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../icons/sidebar-logo.jpg);
 }
 
 .mac-buttons-container {
@@ -40,12 +44,11 @@
 
 .mac-button {
     margin: 8px 0 0 8px;
+    padding: 0;
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    border: none;
-    /* border-width: 1px; */
-    /* border-style: solid; */
+    border: 1px solid;
     cursor: pointer;
     transition: background-color 0.2s ease, transform 0.2s ease;
 }
@@ -86,17 +89,21 @@
     align-items: center;
 }
 
-.sidebar-button {
+.button {
     width: 42px;
     height: 42px;
     background-color: white;
-    border: 1px solid rgb(220, 220, 220);
+    border: 1px solid var(--border-color-darker);
     border-radius: 6px;
     margin-top: 10px;
     transition: background-color 0.3s, border-color 0.3s;
 }
 
-.sidebar-button:hover {
+.bottom-button {
+    border: none;
+}
+
+.button:hover {
     background-color: #f0f0f0;
     border-color: #bbb;
     cursor: pointer;
@@ -111,22 +118,66 @@
     margin-bottom: 20px;
 }
 
-.bottom-button {
-    width: 42px;
-    height: 42px;
-    background-color: lightpink;
-    border: 1px solid rgb(220, 220, 220);
-    border-radius: 6px;
-    margin-top: 10px;
-    transition: background-color 0.3s, border-color 0.3s;
-}
-
-.bottom-button:hover {
-    background-color: #f0f0f0;
-    border-color: #bbb;
-    cursor: pointer;
-}
-
 .content {
     margin-left: 80px;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.btn-pic {
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.smth-btn-1 {
+    background-image: url(../icons/smth-btn-01.jpg);
+}
+
+.smth-btn-2 {
+    background-image: url(../icons/smth-btn-02.jpg);
+}
+
+.star-btn {
+    background-image: url(../icons/star-04.svg);
+}
+
+.zip-btn {
+    background-image: url(../icons/zap-circle.svg);
+}
+
+.smth-btn-3 {
+    background-image: url(../icons/smth-btn-03.jpg);
+}
+
+.cube-btn {
+    background-image: url(../icons/cube-01.svg);
+}
+
+.plus-btn {
+    background-image: url(../icons/plus.svg);
+}
+
+.code-btn {
+    background-image: url(../icons/code-02.svg);
+}
+
+.settings-btn {
+    background-image: url(../icons/settings-03.svg);
+}
+
+.user-btn {
+    background-image: url(../icons/sidebar-user-photo.jpg);
+}
+
+.check-verified {
+    position: relative;
+    bottom: -18px;
+    right: -18px;
+    width: 15px;
+    height: 15px;
+    background-image: url(../icons/check-verified-02.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }

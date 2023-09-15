@@ -5,11 +5,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './edite-profile.component.html',
   styleUrls: ['./edite-profile.component.css']
 })
-export class EditeProfile implements OnInit {
-
+export class EditeProfileComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }
